@@ -1,0 +1,23 @@
+Tilevania
+- when the player dies, the scene is reloaded. I could have the scene re-load as usual, but I would also need to create check point objects in the level so that they can resume it 
+after completing the minigame.
+
+I would need a singleton to manage:
+- the player's health
+- the last known checkpoint the player hit
+
+
+Prefabs:
+
+	TileVania:
+	Quizmaster:
+		Prefabs:
+		AnswerButton
+
+	Lazer Defender:
+		Prefabs:
+			* Background
+			* AudioPlayer
+			* LevelManager
+			* ScoreKeeper
+			
