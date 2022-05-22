@@ -1,0 +1,8 @@
+death_maze_minigame/Library/
+death_maze_minigame/Logs/
+death_maze_minigame/UserSettings/
+*.meta
+death_maze_minigame/Builds/
+death_maze_minigame/Temp/
+death_maze_minigame/.vs/
+death_maze_minigame/obj/
