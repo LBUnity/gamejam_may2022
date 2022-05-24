@@ -60,6 +60,7 @@
     <Compile Include="Assets\MiniQM\Scripts\QuizScript.cs" />
     <Compile Include="Assets\MainTilevania\Scripts\GameSession.cs" />
     <Compile Include="Assets\MiniLD\Scripts\UIDisplay.cs" />
+    <Compile Include="Assets\MainTilevania\Scripts\MainLevelManager.cs" />
     <Compile Include="Assets\MiniLD\Scripts\SpriteScroller.cs" />
     <Compile Include="Assets\MiniLD\Scripts\ScoreKeeper.cs" />
     <Compile Include="Assets\MiniLD\Scripts\DamageDealer.cs" />
@@ -83,7 +84,6 @@
     <Compile Include="Assets\MiniLD\Scripts\UIGameOver.cs" />
     <Compile Include="Assets\MiniLD\Scripts\WaveConfigSO.cs" />
     <Compile Include="Assets\MainTilevania\Scripts\EnemyMovement.cs" />
-    <Compile Include="Assets\MainTilevania\Scripts\MainLevelManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

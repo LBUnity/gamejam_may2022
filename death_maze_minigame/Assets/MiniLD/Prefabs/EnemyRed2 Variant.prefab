@@ -27,6 +27,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyRed2 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3137999205331783121, guid: 215717fa8ecd8184cb5b00c66dbb1f89, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4031289829192597143, guid: 215717fa8ecd8184cb5b00c66dbb1f89, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 6363754065428884692, guid: 215717fa8ecd8184cb5b00c66dbb1f89, type: 3}
       propertyPath: m_RootOrder
       value: 0

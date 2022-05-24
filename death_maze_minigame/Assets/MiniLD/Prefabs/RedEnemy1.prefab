@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 1097492681963585345}
   - component: {fileID: -204690517029139271}
   - component: {fileID: 7453977542923284575}
-  m_Layer: 7
+  m_Layer: 14
   m_Name: RedEnemy1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,7 +179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 286933501365242727}
   - component: {fileID: 8096374566425528213}
-  m_Layer: 7
+  m_Layer: 14
   m_Name: redEnemy2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
