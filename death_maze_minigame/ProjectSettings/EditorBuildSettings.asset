@@ -6,6 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/MainTilevania/Scenes/Level2.unity
+    path: Assets/MainTilevania/Scenes/TilevaniaLevel1.unity
+    guid: e54c31399ebef4e49b095f599e849675
+  - enabled: 1
+    path: Assets/MainTilevania/Scenes/TilevaniaLevel2.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/MainTilevania/Scenes/TilevaniaLevel3.unity
+    guid: f2027d39881a9d14b93e11b5b1c32a6d
+  - enabled: 1
+    path: Assets/MiniLD/Scenes/LazerDefenderGame.unity
+    guid: 3cc8238f19f7de14793e49ba36487323
+  - enabled: 1
+    path: Assets/MiniLD/Scenes/LazerDefenderGameOver.unity
+    guid: dae0e34e20b522849bd9a115fc7a6856
+  - enabled: 1
+    path: Assets/MiniQM/Scenes/QuizmasterGame.unity
+    guid: dd5fb261d3cded24e93d575c30af2f0e
   m_configObjects: {}

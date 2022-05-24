@@ -29,9 +29,12 @@ public class GameManager : MonoBehaviour
     {
         if (quiz.IsQuizComplete())
         {
-            quiz.gameObject.SetActive(false);
-            endScreen.gameObject.SetActive(true);
-            endScreen.ShowFinalScore();
+            //quiz.gameObject.SetActive(false);
+            //endScreen.gameObject.SetActive(true);
+            //endScreen.ShowFinalScore();
+
+            //return to tilevania level 1 for now, use MainLevelManager?
+            SceneManager.LoadScene("TilevaniaLevel1");
         }
     }
 

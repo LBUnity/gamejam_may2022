@@ -46,7 +46,11 @@ public class Health : MonoBehaviour
         }
         else
         {
-            levelManager.LoadGameOver();
+            //levelManager.LoadGameOver();
+            //Stop the audio source
+            audioPlayer.gameObject.GetComponent<AudioSource>().Stop();
+            UnityEngine.SceneManagement.SceneManager.LoadScene("TilevaniaLevel1"); //Return to tilevania level 1 for now. Use Main Level Manager?
+
         }
 
         Destroy(gameObject);

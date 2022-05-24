@@ -53,7 +53,21 @@ public class GameSession : MonoBehaviour
     private void TakeLife()
     {
         PlayerLives--;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        //Randomize loading Quizmaster or LazerDefender
+        int miniGameRange = Enum.GetNames(typeof(MiniGamesEnum)).Length;
+        int minigameIndex = UnityEngine.Random.Range(0, miniGameRange);
+
+        switch (minigameIndex)
+        {
+            case (int)MiniGamesEnum.QUIZMASTER:
+                SceneManager.LoadScene("QuizMasterGame");
+                break;
+            case (int)MiniGamesEnum.LAZER_DEFENDER:
+                SceneManager.LoadScene("LazerDefenderGame");
+                break;
+        }
+
         livesText.text = PlayerLives.ToString();
     }
 
@@ -64,4 +78,7 @@ public class GameSession : MonoBehaviour
         SceneManager.LoadScene(0);
         Destroy(gameObject);
     }
+
+
+    enum MiniGamesEnum { QUIZMASTER = 0, LAZER_DEFENDER = 1};
 }

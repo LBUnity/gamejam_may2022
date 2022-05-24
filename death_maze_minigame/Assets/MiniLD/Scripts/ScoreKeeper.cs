@@ -6,7 +6,7 @@ public class ScoreKeeper : MonoBehaviour
 {
     private int currentScore = 0;
 
-    static QMScoreKeeper instance;
+    static ScoreKeeper instance;
 
     private void Awake()
     {
@@ -24,7 +24,7 @@ public class ScoreKeeper : MonoBehaviour
         }
         else
         {
-            instance = FindObjectOfType<QMScoreKeeper>();
+            instance = FindObjectOfType<ScoreKeeper>();
             DontDestroyOnLoad(gameObject);
         }
     }

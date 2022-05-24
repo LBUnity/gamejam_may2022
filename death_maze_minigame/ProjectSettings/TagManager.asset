@@ -9,7 +9,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
   - Ladder
@@ -17,7 +17,7 @@ TagManager:
   - Background
   - Bouncing
   - Enemies
-  - Hazrds
+  - Hazards
   - Bullets
   - Interactables
   - 
@@ -62,4 +62,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 1368474393
+    locked: 0
+  - name: Water
+    uniqueID: 2298642281
     locked: 0
