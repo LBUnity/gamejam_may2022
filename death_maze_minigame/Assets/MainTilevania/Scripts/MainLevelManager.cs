@@ -8,9 +8,29 @@ public class MainLevelManager : MonoBehaviour
 {
     [SerializeField] float sceneLoadDelay = 2F;
 
+    static MainLevelManager instance;
+
+    void ManageSingleton()
+    {
+        if (instance != null)
+        {
+            //Very small chance that other objects grab and use gameobject,
+            //so set active to false before destroying the game object
+            gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = FindObjectOfType<MainLevelManager>();
+            DontDestroyOnLoad(gameObject);
+        }
+    }
+
+
     private void Awake()
     {
         //Place the singleton data structure here
+        ManageSingleton();
     }
 
     public void LoadMainMenu()

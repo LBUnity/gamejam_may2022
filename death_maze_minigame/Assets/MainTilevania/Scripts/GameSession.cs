@@ -12,8 +12,12 @@ public class GameSession : MonoBehaviour
     [SerializeField] TextMeshProUGUI scoreText;
     private int playerScore;
 
+    private MainLevelManager levelManager;
+
     private void Awake()
     {
+        levelManager = FindObjectOfType<MainLevelManager>();
+
         int numOfGameSessions = FindObjectsOfType<GameSession>().Length;
 
         if (numOfGameSessions > 1)
@@ -61,10 +65,10 @@ public class GameSession : MonoBehaviour
         switch (minigameIndex)
         {
             case (int)MiniGamesEnum.QUIZMASTER:
-                SceneManager.LoadScene("QuizMasterGame");
+                levelManager.LoadMiniQuizmasterGame();//SceneManager.LoadScene("QuizMasterGame");
                 break;
             case (int)MiniGamesEnum.LAZER_DEFENDER:
-                SceneManager.LoadScene("LazerDefenderGame");
+                levelManager.LoadMiniLazerDefenderGame();//SceneManager.LoadScene("LazerDefenderGame");
                 break;
         }
 

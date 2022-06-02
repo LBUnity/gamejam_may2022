@@ -8,11 +8,13 @@ public class GameManager : MonoBehaviour
 
     QuizScript quiz;
     EndScreen endScreen;
+    MainLevelManager levelManager;
 
     private void Awake()
     {
         quiz = FindObjectOfType<QuizScript>();
         endScreen = FindObjectOfType<EndScreen>();
+        levelManager = FindObjectOfType<MainLevelManager>();
     }
 
     // Start is called before the first frame update
@@ -29,12 +31,8 @@ public class GameManager : MonoBehaviour
     {
         if (quiz.IsQuizComplete())
         {
-            //quiz.gameObject.SetActive(false);
-            //endScreen.gameObject.SetActive(true);
-            //endScreen.ShowFinalScore();
-
-            //return to tilevania level 1 for now, use MainLevelManager?
-            SceneManager.LoadScene("TilevaniaLevel1");
+            //return to tilevania level 1 for now.
+            levelManager.LoadMainTilevaniaLevel1();
         }
     }
 

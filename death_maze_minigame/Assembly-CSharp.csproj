@@ -68,7 +68,6 @@
     <Compile Include="Assets\MainTilevania\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\MiniLD\Scripts\CameraShake.cs" />
     <Compile Include="Assets\MainTilevania\Scripts\Bullet.cs" />
-    <Compile Include="Assets\MiniLD\Scripts\LevelManager.cs" />
     <Compile Include="Assets\MiniQM\Scripts\Timer.cs" />
     <Compile Include="Assets\MiniQM\Scripts\QuestionSO.cs" />
     <Compile Include="Assets\MainTilevania\Scripts\LevelExit.cs" />

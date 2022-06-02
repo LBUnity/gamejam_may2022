@@ -14,7 +14,7 @@ public class Health : MonoBehaviour
     CameraShake cameraShake;
     AudioPlayer audioPlayer;
     ScoreKeeper scoreKeeper;
-    LevelManager levelManager;
+    MainLevelManager levelManager;
 
     public int GetHealth()
     {
@@ -26,7 +26,7 @@ public class Health : MonoBehaviour
         cameraShake = Camera.main.GetComponent<CameraShake>();
         audioPlayer = FindObjectOfType<AudioPlayer>();
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
-        levelManager = FindObjectOfType<LevelManager>();
+        levelManager = FindObjectOfType<MainLevelManager>();
     }
 
     private void TakeDamage(int damage)
@@ -46,10 +46,10 @@ public class Health : MonoBehaviour
         }
         else
         {
-            //levelManager.LoadGameOver();
+            
             //Stop the audio source
             audioPlayer.gameObject.GetComponent<AudioSource>().Stop();
-            UnityEngine.SceneManagement.SceneManager.LoadScene("TilevaniaLevel1"); //Return to tilevania level 1 for now. Use Main Level Manager?
+            levelManager.LoadMainTilevaniaLevel1();//Return to tilevania level 1 for now. 
 
         }
 
